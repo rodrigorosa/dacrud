@@ -55,6 +55,7 @@ group :development, :test do
   gem 'rubocop-performance'
   gem 'rubocop-rails'
   # gem 'rubocop-rspec'
+  gem 'rspec-rails', '~> 5.0.0'
 end
 
 group :development do
