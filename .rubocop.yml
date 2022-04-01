@@ -1,0 +1,34 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+  # - rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 3.1
+  NewCops: enable
+  Exclude:
+    - "db/**/*"
+    - "script/**/*"
+    - "bin/**/*"
+    - "config/**/*"
+    - "spec/rails_helper.rb"
+
+Metrics/LineLength:
+  Max: 100
+  Exclude:
+    - "Gemfile"
+
+Metrics/BlockLength:
+  Exclude:
+    - config/**/*
+    - spec/**/*
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - spec/**/*
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
